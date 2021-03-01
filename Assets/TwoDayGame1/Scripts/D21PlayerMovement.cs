@@ -26,11 +26,19 @@ public class D21PlayerMovement : MonoBehaviour
             if (jumpsLeft > 0)
             {
                 jumpsLeft--;
-                rb.AddForce(Vector2.up * 10f, ForceMode2D.Impulse);
-
+                rb.AddForce(Vector2.up * 5f, ForceMode2D.Impulse);
+            }
+            if(jumpsLeft <= 0)
+            {
+                Invoke("JumpReset", 0.5f);
             }
         }
     }
+
+    public void JumpReset() {
+        jumpsLeft += 2;
+    }
+
 
     private void OnCollisionEnter2D(Collision2D other)
     {
