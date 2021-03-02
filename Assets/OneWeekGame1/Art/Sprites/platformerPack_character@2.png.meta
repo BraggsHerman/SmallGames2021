@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 207f5c43cfcdd43e486deedcb0903928
+guid: 049dec5e9a1a1214db3f39d8b7c72325
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6934013284892070054
-    second: Attack1_0
+      213: -8958912295757120821
+    second: platformerPack_character@2_0
   - first:
-      213: -7957278214813060823
-    second: Attack1_1
+      213: -2842130787974639941
+    second: platformerPack_character@2_1
   - first:
-      213: 1409549213185883415
-    second: Attack1_2
+      213: -878064740767748218
+    second: platformerPack_character@2_2
   - first:
-      213: 4976274401295337057
-    second: Attack1_3
+      213: -8027136654198374492
+    second: platformerPack_character@2_3
   - first:
-      213: -5639509438907974925
-    second: Attack1_4
+      213: 7188083684250528917
+    second: platformerPack_character@2_4
   - first:
-      213: 452926297546027425
-    second: Attack1_5
+      213: -6814479663903279671
+    second: platformerPack_character@2_5
   - first:
-      213: 6238536850125145498
-    second: Attack1_6
+      213: 8692510510466486542
+    second: platformerPack_character@2_6
   - first:
-      213: -7543445572115272496
-    second: Attack1_7
+      213: 6670930150951175762
+    second: platformerPack_character@2_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -56,7 +56,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack1_0
+      name: platformerPack_character@2_0
       rect:
         serializedVersion: 2
-        x: 71
-        y: 78
-        width: 41
-        height: 53
+        x: 30
+        y: 192
+        width: 132
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a0d4d938509a3060800000000000000
-      internalID: 6934013284892070054
+      spriteID: bca748dbbbc8ba380800000000000000
+      internalID: -8958912295757120821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack1_1
+      name: platformerPack_character@2_1
       rect:
         serializedVersion: 2
-        x: 269
-        y: 78
-        width: 43
-        height: 53
+        x: 208
+        y: 192
+        width: 160
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 921fc138f91129190800000000000000
-      internalID: -7957278214813060823
+      spriteID: bbe02994b19be88d0800000000000000
+      internalID: -2842130787974639941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack1_2
+      name: platformerPack_character@2_2
       rect:
         serializedVersion: 2
-        x: 471
-        y: 78
-        width: 41
-        height: 53
+        x: 402
+        y: 192
+        width: 156
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71d30619a89bf8310800000000000000
-      internalID: 1409549213185883415
+      spriteID: 68f2ebc35cc70d3f0800000000000000
+      internalID: -878064740767748218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack1_3
+      name: platformerPack_character@2_3
       rect:
         serializedVersion: 2
-        x: 673
-        y: 78
-        width: 41
-        height: 53
+        x: 600
+        y: 192
+        width: 144
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 166041ad3374f0540800000000000000
-      internalID: 4976274401295337057
+      spriteID: 4affcfa1eb1e99090800000000000000
+      internalID: -8027136654198374492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack1_4
+      name: platformerPack_character@2_4
       rect:
         serializedVersion: 2
-        x: 882
-        y: 78
-        width: 107
-        height: 69
+        x: 30
+        y: 1
+        width: 149
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fa7d627b007cb1b0800000000000000
-      internalID: -5639509438907974925
+      spriteID: 59ca887d60431c360800000000000000
+      internalID: 7188083684250528917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack1_5
+      name: platformerPack_character@2_5
       rect:
         serializedVersion: 2
-        x: 1082
-        y: 116
-        width: 103
-        height: 31
+        x: 222
+        y: 3
+        width: 147
+        height: 151
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a1f9a2611e194600800000000000000
-      internalID: 452926297546027425
+      spriteID: 9c5fbefa9da1e61a0800000000000000
+      internalID: -6814479663903279671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack1_6
+      name: platformerPack_character@2_6
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 78
-        width: 45
-        height: 49
+        x: 398
+        y: 0
+        width: 167
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a95c4e5463cb39650800000000000000
-      internalID: 6238536850125145498
+      spriteID: e0154be114002a870800000000000000
+      internalID: 8692510510466486542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack1_7
+      name: platformerPack_character@2_7
       rect:
         serializedVersion: 2
-        x: 1185
-        y: 111
-        width: 4
-        height: 13
+        x: 592
+        y: 0
+        width: 160
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dc6393183c405790800000000000000
-      internalID: -7543445572115272496
+      spriteID: 25643e0d0a7e39c50800000000000000
+      internalID: 6670930150951175762
       vertices: []
       indices: 
       edges: []
