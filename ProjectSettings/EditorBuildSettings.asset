@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/OneWeekGame1/Scenes/OneWeekGameUno.unity
+    guid: 4b5f49e86de18fe41b8f166bb926be95
   m_configObjects: {}
