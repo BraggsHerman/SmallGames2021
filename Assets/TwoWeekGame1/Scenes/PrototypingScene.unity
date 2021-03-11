@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 397235384}
   - component: {fileID: 397235383}
   - component: {fileID: 397235385}
+  - component: {fileID: 397235386}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -183,12 +184,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3236675104909177313, guid: 4d866a7b6f4301b4ba188d2c3c7bb2f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 89f630e1a5a9f7942bdf6a002e4bc546, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.33, y: 0.36}
+  m_Size: {x: 3.125, y: 2.3125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -225,29 +226,23 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0625, y: 2.25}
-    newSize: {x: 0.33, y: 0.36}
+    oldSize: {x: 3.125, y: 2.3125}
+    newSize: {x: 3.125, y: 2.3125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.03125, y: 1.0625}
-      - {x: 0.90625, y: 1.125}
-      - {x: -0.34375, y: 1.125}
-      - {x: -0.46875, y: 1}
-      - {x: -1.03125, y: 0.5}
-      - {x: -1.03125, y: -1.125}
-      - {x: 0.84375, y: -1.125}
-      - {x: 1.03125, y: -0.5}
-      - {x: 1.03125, y: 0.1875}
-      - {x: 0.71875, y: 0.375}
-    - - {x: -0.46875, y: 0}
-      - {x: -0.40625, y: 0.0625}
-      - {x: -0.34375, y: 0}
-      - {x: -0.53125, y: -0.125}
-      - {x: -0.46875, y: -0.125}
+    - - {x: 0.3125, y: 0.46875}
+      - {x: -0.1875, y: 0.46875}
+      - {x: -0.6875, y: 0.28125}
+      - {x: -1, y: -0.28125}
+      - {x: -1, y: -0.90625}
+      - {x: -0.9375, y: -1.15625}
+      - {x: 0.625, y: -1.15625}
+      - {x: 0.625, y: -0.40625}
+      - {x: 0.5, y: 0.28125}
 --- !u!50 &397235384
 Rigidbody2D:
   serializedVersion: 4
@@ -260,7 +255,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.5
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -283,6 +278,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpsLeft: 2
   speed: 15
+  anim: {fileID: 397235386}
+--- !u!95 &397235386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397235380}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 84f08fc9230e5e34eacfd177e1743ded, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &501763458
 GameObject:
   m_ObjectHideFlags: 0
