@@ -25,7 +25,6 @@ public class TwoWeekGameOnePlayerController : MonoBehaviour
         Vector2 position = transform.position;
         position.x = position.x + speed * horitzontal * Time.deltaTime;
         transform.position = position;
-        Debug.Log(horitzontal);
         
         anim.SetFloat("Speed", Mathf.Abs(horitzontal));
 
@@ -46,19 +45,20 @@ public class TwoWeekGameOnePlayerController : MonoBehaviour
                 jumpsLeft--;
                 rb.AddForce(Vector2.up * 5f, ForceMode2D.Impulse);
                 
-                //for jumping, if time permits, come back and set  up layermasks so that jumping animation works
-                //anim.SetBool("IsJumping", true);
+               
+                anim.SetBool("IsJumping", true);
 
             }
-            if (jumpsLeft <= 0)
-            {
-                Invoke("JumpReset", 0.5f);
-            }
+
         }
     }
 
-    public void JumpReset()
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        jumpsLeft += 2;
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            anim.SetBool("IsJumping", false);
+            jumpsLeft = 2;
+        }
     }
 }
