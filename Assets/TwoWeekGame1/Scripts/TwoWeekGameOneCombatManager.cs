@@ -16,12 +16,13 @@ public class TwoWeekGameOneCombatManager : MonoBehaviour
 
    public void Attack()
    {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetKey(KeyCode.J))
         {
             if (canReceviveInput)
             {
                 inputReceived = true;
                 canReceviveInput = false;
+
             }
             else
             {
@@ -34,11 +35,11 @@ public class TwoWeekGameOneCombatManager : MonoBehaviour
     {
         if (!canReceviveInput)
         {
-            canReceviveInput = true;
+            canReceviveInput = false;
         }
         else
         {
-            canReceviveInput = false;
+            canReceviveInput = true;
         }
     }
 }
