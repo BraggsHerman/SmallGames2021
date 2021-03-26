@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Enemy died!");
         //die animation
-        anim.SetBool("IsDead", true);
+        //anim.SetBool("IsDead", true);
         //disable the enemy
         enemyRb.AddForce(Vector2.up * 6f, ForceMode2D.Impulse);
         GetComponent<Collider2D>().enabled = false;

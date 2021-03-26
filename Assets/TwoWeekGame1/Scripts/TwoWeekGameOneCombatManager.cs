@@ -4,42 +4,53 @@ using UnityEngine;
 
 public class TwoWeekGameOneCombatManager : MonoBehaviour
 {
-    public static TwoWeekGameOneCombatManager instance;
+    public Animator anim;
 
-    public bool canReceviveInput;
-    public bool inputReceived;
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public int attackDamage = 40;
+    public LayerMask enemyLayers;
 
-    public void Awake()
+    public float attackRate = 2f;
+    private float nextAttackTime = 0;
+
+    // Update is called once per frame
+    void Update()
     {
-        instance = this;
-    }
-
-   public void Attack()
-   {
-        if (Input.GetKey(KeyCode.J))
+        if (Time.time >= nextAttackTime)
         {
-            if (canReceviveInput)
-            {
-                inputReceived = true;
-                canReceviveInput = false;
 
-            }
-            else
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                return;
+                Attack();
+                nextAttackTime = Time.time + 1f / attackRate;
             }
         }
-   }
+    }
 
-    public void InputManager()
+    void Attack()
     {
-        if (!canReceviveInput)
+        //play attack anim
+        anim.SetTrigger("AttackOne");
+        //detect enemies in range of attack
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        //damage enemies in range of attack
+        foreach (Collider2D enemy in hitEnemies)
         {
-            canReceviveInput = false;
-        }
-        else
-        {
-            canReceviveInput = true;
+            Debug.Log("We hit " + enemy.name);
+            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+
 }
