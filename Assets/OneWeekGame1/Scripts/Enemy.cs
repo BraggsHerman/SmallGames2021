@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
         currentHealth -= damage;
 
         //play hurt animation
-        anim.SetTrigger("Hurt");
+        //anim.SetTrigger("Hurt");
 
         if(currentHealth <= 0)
         {
